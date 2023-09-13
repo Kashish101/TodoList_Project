@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 150vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: scroll;
+    background-image: linear-gradient(#a478e9,#E4B5CB);
+}
+
+
+#main-header {
+    background-color: blueviolet;
+    border-radius: 20px;
+    padding: 2rem;
+    padding-top: -5px;
+    text-align: center;
+}
+
+#header-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 2px 2px 2px blueviolet;
+}
+
+.container {
+    width: 40%;
+    margin-top: 2em;
+    background-color: rgba(255, 255, 255, 0.9);
+    
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0px 0px 15px rgba(10, 10, 10, 0.5);
+}
+
+
+.item {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    border-bottom: 2px solid blueviolet;
+    align-items: center;
+}
+
+.content {
+    flex: 1;
+}
+
+.item .content .text {
+    font-size: 1.125rem;
+    border: none;
+    background-color: transparent;
+    color: #333;
+    width: 100%;
+}
+input[type="text"], input[type="password"], textarea, select {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid blueviolet; 
+  }
+
+.item .content .text:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.item .actions button {
+    margin-left: 0.5rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.item .actions button:hover {
+    background-color: blueviolet;
+}
+
+/* responsiveness */
+@media screen and (max-width: 800px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 99%;
+        margin-top: 5em;
+    }
+}
+
+
+#todoList{
+    padding-left: 8px;
+    list-style: circle;
+}
+
